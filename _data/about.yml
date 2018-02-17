@@ -1,22 +1,22 @@
 me:
-  name: Josh Vogt
+  name: Eliud C. Delgado
   bio: >-
-    This is a bio for use with microformats h-card. This helps other
-    machines understand your content for IndieWeb publishing.
-  webmention: pwa-jekyll-starter.netlify.com
+    I help people and organizations to achieve effective communication 
+    through translation, copywriting and web development.
+  webmention: eliudcdelgado.com 
 social:
   - name: twitter
-    url: 'https://twitter.com/jshvgt'
+    url: 'https://twitter.com/_eliud'
     class: u-url;
   - name: github
-    url: 'https://github.com/dumaurier'
+    url: 'https://github.com/eiud-c-delgado'
     class: u-url;
   - name: email
-    url: 'mailto:joshvogt@gmail.com'
+    url: 'mailto:hola@eliudcdelgado.com'
     class: u-email
   - name: sms
-    url: 'sms:+14169671111'
+    url: 'sms:+525525628165'
     class: u-tel
   - name: my site
-    url: 'https://pwa-jekyll-starter.netlify.com/'
+    url: 'https://eliudcdelgado.com/'
     class: u-url
