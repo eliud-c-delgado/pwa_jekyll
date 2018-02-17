@@ -15,7 +15,6 @@ social:
     url: 'mailto:hola@eliudcdelgado.com'
     class: u-email
   - name: sms
-    url: 'sms:+525525628165'
     class: u-tel
   - name: my site
     url: 'https://eliudcdelgado.com/'
