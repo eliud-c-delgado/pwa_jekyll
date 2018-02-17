@@ -6,6 +6,9 @@ link: >-
 abstract: >-
   Netlify does more than just host your static site. It gives you unbelievable
   control of deployments, form handling and SSL.
+
+
+  That's kinda amazing, isn't it?
 layout: links
 categories: link
 permalink: '/posts/:categories/:title/'
