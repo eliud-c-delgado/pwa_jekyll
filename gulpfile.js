@@ -98,13 +98,13 @@ gulp.task('minify', function() {
 
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ * Compile files from _sass into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass-fast', function () {
-    return gulp.src('src/sass/*.scss')
+    return gulp.src('src/sass/*.sass')
         .pipe(sass({
             outputStyle: 'compressed',
-            includePaths: ['scss'],
+            includePaths: ['sass'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 3 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -116,13 +116,13 @@ gulp.task('sass-fast', function () {
 
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ * Compile files from _sass into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('critical', function () {
-    return gulp.src('src/sass/critical/*.scss')
+    return gulp.src('src/sass/critical/*.sass')
         .pipe(sass({
             outputStyle: 'compressed',
-            includePaths: ['scss'],
+            includePaths: ['sass'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 3 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -149,9 +149,9 @@ gulp.task('prod-assets', ['prod-assets-css', 'prod-assets-js']);
 
 //Watch Tasks
 gulp.task('watch', function () {
-    gulp.watch('src/**/*.scss', ['sass-fast', 'critical']);
+    gulp.watch('src/**/*.sass', ['sass-fast', 'critical']);
     gulp.watch('src/js/**/*.js', ['scripts', 'page-scripts']);
-    gulp.watch(['*.html','pages/**/*.html','src/js/**/*.js', 'src/sass/**/*.scss', '_layouts/*.html', '_includes/*.html', 'service-worker.js'], ['jekyll-rebuild']);
+    gulp.watch(['*.html','pages/**/*.html','src/js/**/*.js', 'src/sass/**/*.sass', '_layouts/*.html', '_includes/*.html', 'service-worker.js'], ['jekyll-rebuild']);
 });
 
 /**
